@@ -1,0 +1,229 @@
+ocio_profile_version: 2.3
+search_path: looks
+strictparsing: true
+luma: [0.2126, 0.7152, 0.0722]
+
+description: ACES v1.3 for OCIO v2.3
+
+roles:
+  aces_interchange: ACES2065-1
+  cie_xyz_d65_interchange: CIE XYZ-D65 - Display-referred
+  color_picking: ACEScg
+  color_timing: ACEScct
+  compositing_linear: ACEScg  
+  compositing_log: ACEScct
+  data: non-colour data
+  default: ACES2065-1  
+  matte_paint: ACEScct
+  rendering: ACEScg  
+  scene_linear: ACEScg
+  texture_paint: ACEScg
+  mari_monitor: rec709_display
+  mari_scalar_monitor: rec709_display
+  mari_color_picker: rec709_display
+  mari_working: ACEScg
+  mari_int8: srgb_encoding
+  mari_int16: srgb_encoding
+  mari_int_scalar: non-colour data
+  mari_scalar8: non-colour data
+  mari_float: ACEScg
+  reference: ACES2065-1
+  srgb_linear: lin_rec709
+  srgb_texture: srgb_encoding
+  substance_3d_painter_standard_srgb: srgb_encoding
+  substance_3d_painter_bitmap_import_8bit: srgb_encoding
+  substance_3d_painter_bitmap_import_16bit: srgb_encoding
+  substance_3d_painter_bitmap_import_floating: ACEScg
+  substance_3d_painter_substance_material: srgb_encoding
+  substance_3d_painter_bitmap_export_8bit: srgb_encoding
+  substance_3d_painter_bitmap_export_16bit: srgb_encoding
+  substance_3d_painter_bitmap_export_floating: ACEScg   
+  texture_int_paint: srgb_encoding
+  texture_float_paint: ACEScg  
+
+file_rules:
+  - !<Rule> {name: Default, colorspace: ACES2065-1}
+
+displays:
+  sRGB 100 nits office:
+    - !<View> {name: ACES 1.3 Brejon, colorspace: ACES 1.3 - BT.709 - sRGB EOTF, looks: Brejon}  
+    - !<View> {name: ACES 1.3, colorspace: ACES 1.3 - BT.709 - sRGB EOTF}
+    - !<View> {name: Display Encoding, colorspace: srgb_encoding}
+    - !<View> {name: None, colorspace: non-colour data}            
+  Rec1886 100 nits video dim:
+    - !<View> {name: ACES 1.3 Brejon, colorspace: ACES 1.3 - BT.709 - 2.4 Gamma, looks: Brejon}  
+    - !<View> {name: ACES 1.3, colorspace: ACES 1.3 - BT.709 - 2.4 Gamma}
+    - !<View> {name: Display Encoding, colorspace: rec709_display}
+    - !<View> {name: None, colorspace: non-colour data}
+  DisplayP3 100 nits video dim:
+    - !<View> {name: ACES 1.3 Brejon, colorspace: ACES 1.3 - P3 - sRGB EOTF, looks: Brejon}  
+    - !<View> {name: ACES 1.3, colorspace: ACES 1.3 - P3 - sRGB EOTF}
+    - !<View> {name: Display Encoding, colorspace: p3_encoding}
+    - !<View> {name: None, colorspace: non-colour data}               
+
+active_displays: [sRGB 100 nits office, Rec1886 100 nits video dim, DisplayP3 100 nits video dim]
+active_views: [ACES 1.3 Brejon, ACES 1.3, Display Encoding, None]
+inactive_colorspaces: [CIE XYZ-D65 - Display-referred, CIE XYZ-D65 - Scene-referred]
+
+##################################### SCENE-REFERRED ##############################################    
+
+colorspaces:
+  - !<ColorSpace>
+    name: ACES2065-1
+    family: SceneReferred
+    bitdepth: 32f
+    description: The "Academy Color Encoding System" reference colorspace.
+    allocation: uniform
+
+  - !<ColorSpace>
+    name: ACEScct
+    family: SceneReferred
+    bitdepth: 32f
+    description: Convert ACEScct to ACES2065-1
+    allocation: uniform
+    to_scene_reference: !<BuiltinTransform> {style: ACEScct_to_ACES2065-1}
+
+  - !<ColorSpace>
+    name: ACEScg
+    family: SceneReferred
+    bitdepth: 32f
+    description: Convert ACEScg to ACES2065-1
+    allocation: uniform
+    to_scene_reference: !<BuiltinTransform> {style: ACEScg_to_ACES2065-1}
+
+  - !<ColorSpace>
+    name: lin_rec709
+    family: SceneReferred
+    bitdepth: 32f
+    description: Convert ACES2065-1 to linear Rec.709 primaries, D65 white point
+    allocation: uniform
+    from_scene_reference: !<MatrixTransform> {matrix: [2.52168618674388, -1.13413098823972, -0.387555198504164, 0, -0.276479914229922, 1.37271908766826, -0.096239173438334, 0, -0.0153780649660342, -0.152975335867399, 1.16835340083343, 0, 0, 0, 0, 1]}
+
+  - !<ColorSpace>
+    name: lin_p3d65
+    family: SceneReferred
+    bitdepth: 32f
+    description: Convert ACES2065-1 to linear P3 primaries, D65 white point
+    allocation: uniform
+    from_scene_reference: !<MatrixTransform> {matrix: [2.02490528596679, -0.689069761034766, -0.335835524932019, 0, -0.183597032256178, 1.28950620775902, -0.105909175502841, 0, 0.00905856112234766, -0.0592796840575522, 1.0502211229352, 0, 0, 0, 0, 1]}
+
+  - !<ColorSpace>
+    name: lin_rec2020
+    family: SceneReferred
+    bitdepth: 32f
+    description: Convert ACES2065-1 to linear Rec.2020 primaries, D65 white point
+    allocation: uniform
+    from_scene_reference: !<MatrixTransform> {matrix: [1.49040952054172, -0.26617091926613, -0.224238601275593, 0, -0.0801674998722558, 1.18216712109757, -0.10199962122531, 0, 0.00322763119162216, -0.0347764757450576, 1.03154884455344, 0, 0, 0, 0, 1]}
+
+##################################### DISPLAY-REFERRED ##############################################
+
+  - !<ColorSpace>
+    name: ACES 1.3 - BT.709 - sRGB EOTF
+    family: DisplayReferred
+    bitdepth: 32f
+    description: ACES 1.3 sRGB Output Transform
+    from_scene_reference: !<GroupTransform>
+      children:
+        - !<BuiltinTransform> {style: ACES-OUTPUT - ACES2065-1_to_CIE-XYZ-D65 - SDR-VIDEO_1.0}
+        - !<BuiltinTransform> {style: DISPLAY - CIE-XYZ-D65_to_sRGB}    
+
+  - !<ColorSpace>
+    name: ACES 1.3 - BT.709 - 2.4 Gamma
+    family: DisplayReferred
+    bitdepth: 32f
+    description: ACES 1.3 Rec.709 Output Transform
+    from_scene_reference: !<GroupTransform>
+      children:
+        - !<BuiltinTransform> {style: ACES-OUTPUT - ACES2065-1_to_CIE-XYZ-D65 - SDR-VIDEO_1.0}
+        - !<BuiltinTransform> {style: DISPLAY - CIE-XYZ-D65_to_REC.1886-REC.709}
+
+  - !<ColorSpace>
+    name: ACES 1.3 - P3 - sRGB EOTF
+    family: DisplayReferred
+    bitdepth: 32f
+    description: ACES 1.3 Display P3 Output Transform
+    from_scene_reference: !<GroupTransform>
+      children:
+        - !<BuiltinTransform> {style: ACES-OUTPUT - ACES2065-1_to_CIE-XYZ-D65 - SDR-VIDEO_1.0}
+        - !<BuiltinTransform> {style: DISPLAY - CIE-XYZ-D65_to_DisplayP3}        
+
+############################################## UTILITY ##############################################    
+
+  - !<ColorSpace>
+    name: srgb_encoding
+    family: Utility
+    bitdepth: 32f
+    description: Convert ACES2065-1 to sRGB
+    allocation: uniform
+    from_scene_reference: !<GroupTransform>
+      name: AP0 to sRGB Encoded Rec.709
+      children:
+        - !<MatrixTransform> {matrix: [2.52168618674388, -1.13413098823972, -0.387555198504164, 0, -0.276479914229922, 1.37271908766826, -0.096239173438334, 0, -0.0153780649660342, -0.152975335867399, 1.16835340083343, 0, 0, 0, 0, 1]}
+        - !<ExponentWithLinearTransform> {gamma: 2.4, offset: 0.055, direction: inverse}
+
+  - !<ColorSpace>
+    name: p3_encoding
+    family: Utility
+    bitdepth: 32f
+    description: Convert ACES2065-1 to P3
+    allocation: uniform
+    from_scene_reference: !<GroupTransform>
+      name: AP0 to P3
+      children:
+        - !<MatrixTransform> {matrix: [2.02490528596679, -0.689069761034766, -0.335835524932019, 0, -0.183597032256178, 1.28950620775902, -0.105909175502841, 0, 0.00905856112234766, -0.0592796840575522, 1.0502211229352, 0, 0, 0, 0, 1]}
+        - !<ExponentWithLinearTransform> {gamma: 2.4, offset: 0.055, direction: inverse}        
+
+  - !<ColorSpace>
+    name: srgb_display
+    family: Utility
+    bitdepth: 32f
+    description: Convert ACES2065-1 to 2.2 gamma-corrected Rec.709 primaries, D65 white point
+    allocation: uniform
+    from_scene_reference: !<GroupTransform>
+      name: AP0 to Gamma 2.2 Encoded Rec.709
+      children:
+        - !<MatrixTransform> {matrix: [2.52168618674388, -1.13413098823972, -0.387555198504164, 0, -0.276479914229922, 1.37271908766826, -0.096239173438334, 0, -0.0153780649660342, -0.152975335867399, 1.16835340083343, 0, 0, 0, 0, 1]}
+        - !<ExponentTransform> {value: 2.2, style: pass_thru, direction: inverse}
+
+  - !<ColorSpace>
+    name: rec709_display
+    family: Utility
+    bitdepth: 32f
+    description: Convert ACES2065-1 to 2.4 gamma-corrected Rec.709 primaries, D65 white point
+    allocation: uniform
+    from_scene_reference: !<GroupTransform>
+      name: AP0 to Gamma 2.4 Encoded Rec.709
+      children:
+        - !<MatrixTransform> {matrix: [2.52168618674388, -1.13413098823972, -0.387555198504164, 0, -0.276479914229922, 1.37271908766826, -0.096239173438334, 0, -0.0153780649660342, -0.152975335867399, 1.16835340083343, 0, 0, 0, 0, 1]}
+        - !<ExponentTransform> {value: 2.4, style: pass_thru, direction: inverse}
+
+  - !<ColorSpace>
+    name: non-colour data
+    family: Utility
+    bitdepth: 32f
+    description: The utility "Raw" colorspace.
+    isdata: true
+    allocation: uniform
+
+  - !<ColorSpace>
+    name: CIE XYZ-D65 - Scene-referred
+    family: Utility
+    bitdepth: 32f
+    description: Convert ACES2065-1 to CIE XYZ, D65 white point 
+    allocation: uniform
+    from_scene_reference: !<MatrixTransform> {matrix: [0.938279849239345, -0.00445144581227847, 0.0166275235564231, 0, 0.337368890823117, 0.729521566676754, -0.066890457499083, 0, 0.00117395084939056, -0.00371070640198378, 1.09159450636463, 0, 0, 0, 0, 1]}
+
+  - !<ColorSpace>
+    name: CIE XYZ-D65 - Display-referred
+    family: Utility
+    bitdepth: 32f
+    description: The "CIE XYZ (D65)" display connection colorspace.
+    allocation: uniform
+
+######################################## LOOKS ###################################################### 
+
+looks:
+  - !<Look>
+    name: Brejon
+    process_space: ACEScct
+    transform: !<FileTransform> {src: PFE_ACEScct_001_Brejon.cube, interpolation: tetrahedral}    
