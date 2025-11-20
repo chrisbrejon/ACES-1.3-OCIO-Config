@@ -7,9 +7,12 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 The main interest of this config is the LMT called "Brejon". I hope it will help you **crafting beautiful images**. Enjoy!
 
 # Image Examples
+Below are some examples of ACES 1.3 without and with the LMT. The LMT tries to improve some of the visual artifacts present in ACES 1.3.
 <p>
     <img ![hue_sweep_aces] width="144" height="81" src="https://github.com/user-attachments/assets/877ce4d2-2062-4c17-9903-405dcd04a563" >
     <img ![hue_sweep_brejon] width="144" height="81" src="https://github.com/user-attachments/assets/db1af377-ccbe-40f4-a227-36202cbe5370" >
+    <img ![light_sabers_aces] width="144" height="81" src="https://github.com/user-attachments/assets/ebcd2771-139e-4aec-911a-03db1e10be3d" >
+    <img ![light_sabers_brejon] width="144" height="81" src="https://github.com/user-attachments/assets/6699cc31-448f-4abc-8eb4-2933e8f0510b" >
 </p>
 
 Original files (encoded in "linear-AP0") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
