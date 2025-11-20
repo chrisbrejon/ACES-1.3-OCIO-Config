@@ -13,6 +13,8 @@ Below are some examples of ACES 1.3 without and with the LMT. The LMT tries to i
     <img ![hue_sweep_brejon] width="144" height="81" src="https://github.com/user-attachments/assets/db1af377-ccbe-40f4-a227-36202cbe5370" >
     <img ![light_sabers_aces] width="144" height="81" src="https://github.com/user-attachments/assets/ebcd2771-139e-4aec-911a-03db1e10be3d" >
     <img ![light_sabers_brejon] width="144" height="81" src="https://github.com/user-attachments/assets/6699cc31-448f-4abc-8eb4-2933e8f0510b" >
+    <img ![dragon_scene_aces] width="144" height="81" src="https://github.com/user-attachments/assets/45e9cac1-2bd5-4260-af17-18506d88bbf0" >
+    <img ![dragon_scene_brejon] width="144" height="81" src="https://github.com/user-attachments/assets/ddf4c39c-0aa4-44f0-b657-3de75cdd4dd7" >
 </p>
 
 Original files (encoded in "linear-AP0") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
