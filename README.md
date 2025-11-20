@@ -3,24 +3,25 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 * Inputs (textures) are in ACEScg
 * Rendering and Nuke working space are also in ACEScg
 * View Transform is for sRGB, Rec.1886 and Display P3 displays
+* This config uses OCIO 2.3. This is **important**. Please check your software's compatibility
 
 The main interest of this config is the LMT called "Brejon". I hope it will help you **crafting beautiful images**. Enjoy!
 
 # Image Examples
 Below are some examples of ACES 1.3 without and with the LMT. The LMT tries to improve some of the visual artifacts present in ACES 1.3.
 <p>
-    <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/877ce4d2-2062-4c17-9903-405dcd04a563" >
-    <img ![hue_sweep_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/db1af377-ccbe-40f4-a227-36202cbe5370" >
-    <img ![light_sabers_aces] width="128" height="72" src="https://github.com/user-attachments/assets/ebcd2771-139e-4aec-911a-03db1e10be3d" >
-    <img ![light_sabers_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/6699cc31-448f-4abc-8eb4-2933e8f0510b" >
-    <img ![dragon_scene_aces] width="128" height="72" src="https://github.com/user-attachments/assets/45e9cac1-2bd5-4260-af17-18506d88bbf0" >
-    <img ![dragon_scene_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/ddf4c39c-0aa4-44f0-b657-3de75cdd4dd7" >
-    <img ![blue_club_aces] width="128" height="72" src="https://github.com/user-attachments/assets/edf9ddf2-b555-4442-b13f-92f72325a1a6" >
-    <img ![blue_club_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/983b98b7-3d8a-4040-9777-450d90a47534" >
-    <img ![red_xmas_aces] width="128" height="72" src="https://github.com/user-attachments/assets/c0bb5861-3145-4264-839b-ca26293994c4" >
-    <img ![red_xmas_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/a0ea1751-96fc-4c35-96cb-7d123d157a07" >
-    <img ![blue_bar_aces] width="128" height="72" src="https://github.com/user-attachments/assets/b83c5daf-b84e-4e52-95f2-c7dc0c77c134" >
-    <img ![blue_bar_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/58ac7c39-9b2f-494f-a0f2-0e38adeec744" > 
+    <img ![hue_sweep_aces] width="112" height="63" src="https://github.com/user-attachments/assets/877ce4d2-2062-4c17-9903-405dcd04a563" >
+    <img ![hue_sweep_brejon] width="112" height="63" src="https://github.com/user-attachments/assets/db1af377-ccbe-40f4-a227-36202cbe5370" >
+    <img ![light_sabers_aces] width="112" height="63" src="https://github.com/user-attachments/assets/ebcd2771-139e-4aec-911a-03db1e10be3d" >
+    <img ![light_sabers_brejon] width="112" height="63" src="https://github.com/user-attachments/assets/6699cc31-448f-4abc-8eb4-2933e8f0510b" >
+    <img ![dragon_scene_aces] width="112" height="63" src="https://github.com/user-attachments/assets/45e9cac1-2bd5-4260-af17-18506d88bbf0" >
+    <img ![dragon_scene_brejon] width="112" height="63" src="https://github.com/user-attachments/assets/ddf4c39c-0aa4-44f0-b657-3de75cdd4dd7" >
+    <img ![blue_club_aces] width="112" height="63" src="https://github.com/user-attachments/assets/edf9ddf2-b555-4442-b13f-92f72325a1a6" >
+    <img ![blue_club_brejon] width="112" height="63" src="https://github.com/user-attachments/assets/983b98b7-3d8a-4040-9777-450d90a47534" >
+    <img ![red_xmas_aces] width="112" height="63" src="https://github.com/user-attachments/assets/c0bb5861-3145-4264-839b-ca26293994c4" >
+    <img ![red_xmas_brejon] width="112" height="63" src="https://github.com/user-attachments/assets/a0ea1751-96fc-4c35-96cb-7d123d157a07" >
+    <img ![blue_bar_aces] width="112" height="63" src="https://github.com/user-attachments/assets/b83c5daf-b84e-4e52-95f2-c7dc0c77c134" >
+    <img ![blue_bar_brejon] width="112" height="63" src="https://github.com/user-attachments/assets/58ac7c39-9b2f-494f-a0f2-0e38adeec744" > 
 </p>
 
 Original files (encoded in "linear-AP0") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
