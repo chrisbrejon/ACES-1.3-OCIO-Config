@@ -5,7 +5,7 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 * View Transforms are for sRGB, Rec.1886 and Display P3 displays
 * This config uses OCIO 2.3. This is **important**. Please check your software's compatibility.
 
-The main interest of this config is the Look Modification Transform (LMT), which tries to improve some of the visual artifacts present in ACES 1.3.
+The main interest of this config is the Look Modification Transform (LMT), which improves some of the visual artifacts present in ACES 1.3.
 
 # Image Examples
 Below are some examples of ACES 1.3 without and with the LMT:
@@ -44,7 +44,7 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 # Looks
 * There is only one look in this config. It is called "Brejon" and it is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
 * The use of Looks is highly recommended with ACES
-* The "Brejon" look has been added to the ACES Views, which has been set by default in the config.
+* The "Brejon" look has been added to the ACES Views, which have been set by default in the config
 
 # Other available Color Management Workflows
 | Name                                                                                             | Author               | Release date |              Observations                             |
