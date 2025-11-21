@@ -25,7 +25,9 @@ Below are some examples of ACES 1.3 without and with the LMT. It tries to improv
     <img ![louise_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/0433569a-cf9c-4000-a493-7a50c46aae1b" >
     <img ![louise_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/60990356-f3f7-45ab-bc1f-618758a15332" >
     <img ![stageLights_balls_aces] width="128" height="72" src="https://github.com/user-attachments/assets/597fe9a0-9bd9-449b-be9b-e146763e2a98" >
-    <img ![stageLights_balls_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/96628f8d-53d3-4e78-8bf9-a327828e2446" >    
+    <img ![stageLights_balls_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/96628f8d-53d3-4e78-8bf9-a327828e2446" >
+    <img ![sunny_spheres_aces] width="128" height="72" src="https://github.com/user-attachments/assets/7b44311a-c8ef-449c-8ea7-42b8ac703f3f" >
+    <img ![sunny_spheres_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/6b38eb40-0b79-4c14-99e0-8cf8a370ea6b" >      
 </p>
 
 Original files (encoded in "linear-AP0") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
