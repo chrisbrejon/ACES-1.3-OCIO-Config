@@ -44,7 +44,7 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 # Looks
 * There is only one look in this config. It is called "Brejon" and it is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
 * The use of Looks is highly recommended with ACES
-* The "Brejon" look has been added to the ACES Views. This is the default View in the config.
+* The "Brejon" look has been added to the ACES Views, which has been set by default in the config.
 
 # Other available Color Management Workflows
 | Name                                                                                             | Author               | Release date |              Observations                             |
