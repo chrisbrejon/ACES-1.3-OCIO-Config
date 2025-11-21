@@ -41,7 +41,7 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 * No inverse of the View Transforms has been provided
 * One may easily add several colorspaces or displays for HDR output if needed (such as "p3_d65_pq")
 
-# Looks
+# Look Modification Transform
 * There is only one look in this config. It is called "Brejon" and it is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
 * The use of looks is highly recommended with ACES
 * The "Brejon" look has been added to the ACES Views, which have been set by default in the config
