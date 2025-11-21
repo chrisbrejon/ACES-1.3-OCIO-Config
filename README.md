@@ -8,7 +8,7 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 The main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
 
 # Image Examples
-Below are some examples of ACES 1.3 without and with the LMT:
+Below are some examples of ACES 1.3 without and with my "Brejon" LMT:
 <p>
     <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/556a224f-cc91-4907-bf80-0e11c93a5cae" >
     <img ![hue_sweep_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/4182023e-2876-44e3-a2fc-b165dff40e62" >
