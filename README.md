@@ -5,7 +5,7 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 * View Transforms are for sRGB, Rec.1886 and Display P3 displays
 * This config uses OCIO 2.3. This is **important**. Please check your software's compatibility.
 
-The main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
+Its main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
 
 # Image Examples
 Below are some examples of ACES 1.3 without and with my "Brejon" LMT:
@@ -27,7 +27,9 @@ Below are some examples of ACES 1.3 without and with my "Brejon" LMT:
     <img ![stageLights_balls_aces] width="128" height="72" src="https://github.com/user-attachments/assets/597fe9a0-9bd9-449b-be9b-e146763e2a98" >
     <img ![stageLights_balls_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/96628f8d-53d3-4e78-8bf9-a327828e2446" >
     <img ![sunny_spheres_aces] width="128" height="72" src="https://github.com/user-attachments/assets/7b44311a-c8ef-449c-8ea7-42b8ac703f3f" >
-    <img ![sunny_spheres_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/6b38eb40-0b79-4c14-99e0-8cf8a370ea6b" >      
+    <img ![sunny_spheres_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/6b38eb40-0b79-4c14-99e0-8cf8a370ea6b" >
+    <img ![blue_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/6e351ce2-9576-42c8-bed7-e4bdaf69bda0" >
+    <img ![blue_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/af408c57-bbbd-49a3-8da5-028ad5bf4b55" >
 </p>
 
 Original files (encoded in "linear-AP0") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
