@@ -3,7 +3,7 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 * Inputs (textures) are in ACEScg
 * Rendering and Nuke working space are also in ACEScg
 * View Transforms are for sRGB, Rec.1886 and Display P3 displays
-* This config uses OCIO 2.3. This is **important**. Please check your software's compatibility.
+* This config uses OCIO 2.3, so please check your software's compatibility
 
 Its main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
 
@@ -31,7 +31,9 @@ Below are some examples of ACES 1.3 without and with my "Brejon" LMT:
     <img ![blue_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/6e351ce2-9576-42c8-bed7-e4bdaf69bda0" >
     <img ![blue_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/af408c57-bbbd-49a3-8da5-028ad5bf4b55" >
     <img ![red_diver_aces] width="128" height="72" src="https://github.com/user-attachments/assets/37ec2e9d-3c90-49a9-ae85-ec310e5e95f5" >
-    <img ![red_diver_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5aa66928-2d44-4a14-b468-5cf39781092e" >    
+    <img ![red_diver_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5aa66928-2d44-4a14-b468-5cf39781092e" >
+    <img ![blue_pool_aces] width="128" height="72" src="https://github.com/user-attachments/assets/f1528506-1fb0-48a9-9a2a-6d020c57a5be" >
+    <img ![blue_pool_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/c7488d75-e9fa-4410-92f7-78caefd1abab" >    
 </p>
 
 Original files (encoded in "linear-AP0") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
