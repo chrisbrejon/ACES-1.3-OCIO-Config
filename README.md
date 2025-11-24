@@ -2,7 +2,7 @@
 Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareFoundation/OpenColorIO-Config-ACES/releases/tag/v2.0.0-v2.1.0) I have created a minimal OCIO config of ACES 1.3 for full CG projects:
 * Inputs (textures) are in ACEScg
 * Rendering and Nuke working space are also in ACEScg
-* View Transforms are for sRGB, Rec.1886 and Display P3 displays
+* View Transforms are for sRGB (Gamma 2.2), Rec.1886 and Display P3 displays
 * This config uses OCIO 2.3, so please check your software's compatibility
 
 Its main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
