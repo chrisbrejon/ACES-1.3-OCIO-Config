@@ -2,7 +2,7 @@
 Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareFoundation/OpenColorIO-Config-ACES/releases/tag/v2.0.0-v2.1.0) I have created a minimal OCIO config of ACES 1.3 for full CG projects:
 * Inputs (textures) are in ACEScg
 * Rendering and Nuke working space are also in ACEScg
-* View Transforms are for sRGB (Gamma 2.2), Rec.1886 and Display P3 displays
+* View Transforms are for sRGB (Gamma 2.2), Rec.1886 and Display P3 (also Gamma 2.2) displays
 * This config uses OCIO 2.3, so please check your software's compatibility
 
 Its main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
@@ -41,6 +41,7 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 # About the config
 * Reference color space is ACES2065-1
 * All transforms come from the original OCIO config (based on [CTL code)](https://github.com/aces-aswf/aces-output/tree/dev)
+* The "XYZ to RGB matrix" for the DisplayP3 transform comes [from Antler Post](https://antlerpost.com/colour-spaces/P3D65.html#matrices)
 * "ACEScct" can be used for a matte-painting workflow in Photoshop
 * "ACEScct" can also be used for color timing and some log operations (such as sharpen)
 * Substance_painter roles were set following [this page](https://mrlixm.github.io/blog/substance-painter-color-management/)
