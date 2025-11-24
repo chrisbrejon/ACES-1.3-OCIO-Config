@@ -56,9 +56,9 @@ displays:
     - !<View> {name: Display Encoding, colorspace: rec709_display}
     - !<View> {name: None, colorspace: non-colour data}
   DisplayP3 100 nits video dim:
-    - !<View> {name: ACES 1.3 Brejon, colorspace: ACES 1.3 - P3 - sRGB EOTF, looks: Brejon}  
-    - !<View> {name: ACES 1.3, colorspace: ACES 1.3 - P3 - sRGB EOTF}
-    - !<View> {name: Display Encoding, colorspace: p3_encoding}
+    - !<View> {name: ACES 1.3 Brejon, colorspace: ACES 1.3 - P3 - Gamma 2.2, looks: Brejon}  
+    - !<View> {name: ACES 1.3, colorspace: ACES 1.3 - P3 - Gamma 2.2}
+    - !<View> {name: Display Encoding, colorspace: p3_display}
     - !<View> {name: None, colorspace: non-colour data}               
 
 active_displays: [sRGB 100 nits office, Rec1886 100 nits video dim, DisplayP3 100 nits video dim]
@@ -138,14 +138,15 @@ colorspaces:
         - !<BuiltinTransform> {style: DISPLAY - CIE-XYZ-D65_to_REC.1886-REC.709}
 
   - !<ColorSpace>
-    name: ACES 1.3 - P3 - sRGB EOTF
+    name: ACES 1.3 - P3 - Gamma 2.2
     family: DisplayReferred
     bitdepth: 32f
     description: ACES 1.3 Display P3 Output Transform
     from_scene_reference: !<GroupTransform>
       children:
         - !<BuiltinTransform> {style: ACES-OUTPUT - ACES2065-1_to_CIE-XYZ-D65 - SDR-VIDEO_1.0}
-        - !<BuiltinTransform> {style: DISPLAY - CIE-XYZ-D65_to_DisplayP3}        
+        - !<MatrixTransform> {matrix: [2.49349691, -0.93138362, -0.40271078, 0.0000000000, -0.82948897, 1.76266406, 0.02362469, 0.0000000000, 0.03584583, -0.07617239, 0.95688452, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<ExponentTransform> {value: 2.2, style: pass_thru, direction: inverse}           
 
 ############################################## UTILITY ##############################################    
   - !<ColorSpace>
@@ -185,7 +186,7 @@ colorspaces:
         - !<ExponentTransform> {value: 2.4, style: pass_thru, direction: inverse}
 
   - !<ColorSpace>
-    name: p3_encoding
+    name: p3_display
     family: Utility
     bitdepth: 32f
     description: Convert ACES2065-1 to sRGB Encoded P3-D65 primaries, D65 white point
@@ -194,7 +195,7 @@ colorspaces:
       name: AP0 to P3
       children:
         - !<MatrixTransform> {matrix: [2.02490528596679, -0.689069761034766, -0.335835524932019, 0, -0.183597032256178, 1.28950620775902, -0.105909175502841, 0, 0.00905856112234766, -0.0592796840575522, 1.0502211229352, 0, 0, 0, 0, 1]}
-        - !<ExponentWithLinearTransform> {gamma: 2.4, offset: 0.055, direction: inverse}        
+        - !<ExponentTransform> {value: 2.2, style: pass_thru, direction: inverse}      
 
   - !<ColorSpace>
     name: non-colour data
