@@ -72,7 +72,7 @@ colorspaces:
     name: ACES2065-1
     family: SceneReferred
     bitdepth: 32f
-    description: The "Academy Color Encoding System" reference colorspace.
+    description: The "Academy Color Encoding System" reference colorspace
     allocation: uniform
 
   - !<ColorSpace>
@@ -189,7 +189,7 @@ colorspaces:
     name: p3_display
     family: Utility
     bitdepth: 32f
-    description: Convert ACES2065-1 to sRGB Encoded P3-D65 primaries, D65 white point
+    description: Convert ACES2065-1 to 2.2 gamma-corrected P3 primaries, D65 white point
     allocation: uniform
     from_scene_reference: !<GroupTransform>
       name: AP0 to P3
@@ -201,7 +201,7 @@ colorspaces:
     name: non-colour data
     family: Utility
     bitdepth: 32f
-    description: The utility "Raw" colorspace.
+    description: No operation
     isdata: true
     allocation: uniform
 
