@@ -42,7 +42,7 @@ Original files (encoded in "ACES2065-1") are available [here](https://www.dropbo
 * Reference color space is ACES2065-1
 * All transforms come from the original OCIO config (based on [CTL code)](https://github.com/aces-aswf/aces-output/tree/dev)
 * The "XYZ to RGB matrix" for the DisplayP3 transform comes from [Antler Post](https://antlerpost.com/colour-spaces/P3D65.html#matrices)
-* This matrix can be generated using [Colour Science](https://www.colour-science.org/apps/) using "DCDM XYZ" with no CAT
+* This matrix can be generated using [Colour Science](https://www.colour-science.org/apps/) using "DCDM XYZ" and "P3-D65" with no CAT
 * "ACEScct" can be used for a matte-painting workflow in Photoshop
 * "ACEScct" can also be used for color timing and some log operations (such as sharpen)
 * Substance_painter roles were set following [this page](https://mrlixm.github.io/blog/substance-painter-color-management/)
