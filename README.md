@@ -50,7 +50,7 @@ Original files (encoded in "ACES2065-1") are available [here](https://www.dropbo
 
 # Look Modification Transform
 * There is only one look in this config (called "Brejon") and it is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
-* Its purpose is to give a pleasing aspect by rebalancing purity, brilliance and hue path bendings in a very careful way
+* Its purpose is to give a pleasing aspect by carefully rebalancing purity, brilliance and hue path bendings
 * The use of looks is highly recommended with ACES
 * The "Brejon" look has been added to the ACES Views by default to the config
 
