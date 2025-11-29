@@ -3,37 +3,37 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 * Inputs (textures) are in ACEScg
 * Rendering and Nuke working space are also in ACEScg
 * View Transforms are for sRGB (Gamma 2.2), Rec.1886 and Display P3 (also Gamma 2.2) displays
-* This config uses OCIO 2.3, so please check your software's compatibility
+* This config uses OCIO 2.1, so please check your software's compatibility
 
 Its main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
 
 # Image Examples
-Below are some examples of ACES 1.3 without and with my "Brejon" LMT:
+Below are some examples of ACES 1.3 with the Reference Gamut Compression (RGC) and my "Brejon" LMT:
 <p>
-    <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/556a224f-cc91-4907-bf80-0e11c93a5cae" >
-    <img ![hue_sweep_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/64a392d5-9251-412c-9b1e-929ef2141127" >
-    <img ![light_sabers_aces] width="128" height="72" src="https://github.com/user-attachments/assets/fcfbad67-4fdf-468d-a932-1c42e436797a" >
-    <img ![light_sabers_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/39cffac0-98ed-45fc-afde-0017182b0b05" >
-    <img ![dragon_scene_aces] width="128" height="72" src="https://github.com/user-attachments/assets/6e6df738-2775-4760-9171-52a9b3a5d3da" >
-    <img ![dragon_scene_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/0821b10a-2629-488b-a4fa-4cb4d5f06e31" >
-    <img ![blue_club_aces] width="128" height="72" src="https://github.com/user-attachments/assets/8abebc34-247e-4a05-ae02-9c539a2de5bb" >
-    <img ![blue_club_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/7a0c4c69-f06a-42c6-8cec-bf4987a72fe8" >
-    <img ![red_xmas_aces] width="128" height="72" src="https://github.com/user-attachments/assets/2a2d80ac-32f4-4cc0-b976-9d576875a90d" >
-    <img ![red_xmas_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/fd01da0d-fa37-4a15-a2e6-0028b0ef4cef" >
-    <img ![blue_bar_aces] width="128" height="72" src="https://github.com/user-attachments/assets/a004038f-db0f-4440-9f15-0408de16d82f" >
-    <img ![blue_bar_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/559e5cfe-f265-40a7-9ac4-25410c8f195f" >
-    <img ![louise_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/0433569a-cf9c-4000-a493-7a50c46aae1b" >
-    <img ![louise_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/7c596d20-c0e5-4500-93b8-d1344dca8526" >
-    <img ![stageLights_balls_aces] width="128" height="72" src="https://github.com/user-attachments/assets/597fe9a0-9bd9-449b-be9b-e146763e2a98" >
-    <img ![stageLights_balls_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/ba3b1e52-a405-4dba-84fa-9dd3691c95ab" >
-    <img ![sunny_spheres_aces] width="128" height="72" src="https://github.com/user-attachments/assets/7b44311a-c8ef-449c-8ea7-42b8ac703f3f" >
-    <img ![sunny_spheres_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/d393e2af-84a6-42f2-9d1e-3bc5bb1d4f36" >
-    <img ![blue_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/6e351ce2-9576-42c8-bed7-e4bdaf69bda0" >
-    <img ![blue_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/ec1efe2b-058a-4444-8fb0-a42d7b48753a" >
-    <img ![red_diver_aces] width="128" height="72" src="https://github.com/user-attachments/assets/37ec2e9d-3c90-49a9-ae85-ec310e5e95f5" >
-    <img ![red_diver_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/ae5f7e9f-644b-42a4-8a5c-c28303333376" >
-    <img ![blue_pool_aces] width="128" height="72" src="https://github.com/user-attachments/assets/f1528506-1fb0-48a9-9a2a-6d020c57a5be" >
-    <img ![blue_pool_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/9501a772-a1e7-48b6-8f33-6cb7f5dfd261" >    
+    <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/b6c91eb0-6c65-4677-9ea0-15ad08f71bfc" >
+    <img ![hue_sweep_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f20f466c-af63-4a27-a2ff-2692eaebee9d" >
+    <img ![light_sabers_aces] width="128" height="72" src="https://github.com/user-attachments/assets/4d53dc76-0737-4738-8a84-a7e3a0e0e7e7" >
+    <img ![light_sabers_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/8b2ecda3-4206-47ab-ac5e-6d526f415ba7" >
+    <img ![dragon_scene_aces] width="128" height="72" src="https://github.com/user-attachments/assets/f3fcfd04-1c7b-4a3b-8f1a-4f1434803265" >
+    <img ![dragon_scene_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f24253a2-6ba5-4ad0-9700-db7a36252a8c" >
+    <img ![blue_club_aces] width="128" height="72" src="https://github.com/user-attachments/assets/f7ac69b3-7d5b-4b7d-8f0f-3baec1ed4867" >
+    <img ![blue_club_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/59117e5e-f137-42e0-b5fa-1630681986dc" >
+    <img ![red_xmas_aces] width="128" height="72" src="https://github.com/user-attachments/assets/407c14d3-99a8-416a-a649-9710185f9646" >
+    <img ![red_xmas_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5612e711-6457-4fa7-ab45-a05567215d0b" >
+    <img ![blue_bar_aces] width="128" height="72" src="https://github.com/user-attachments/assets/3b7910e6-1c0f-4770-bc7e-7a4727ce47fb" >
+    <img ![blue_bar_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/d3302cd2-562c-4c56-8278-d8bdff31a34f" >
+    <img ![louise_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/bb8ac557-80d5-430d-a204-0d7414ae80f0" >
+    <img ![louise_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5ee6c506-c676-43d8-a0d8-36441d3ca0c5" >
+    <img ![stageLights_balls_aces] width="128" height="72" src="https://github.com/user-attachments/assets/37d39316-4e43-4b1a-80d5-c0ac5dab74c8" >
+    <img ![stageLights_balls_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/0d275440-0dbd-4f5c-a1a1-f450a52bf520" >
+    <img ![sunny_spheres_aces] width="128" height="72" src="https://github.com/user-attachments/assets/c4d3cfea-d8ba-4f84-94dd-fff24cb26e0b" >
+    <img ![sunny_spheres_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/fd6dfaf5-5b80-45b2-9cf9-656b3d0d1435" >
+    <img ![blue_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/7c9523ff-59a6-42e6-9605-c6366348bcd9" >
+    <img ![blue_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/05207ef4-8913-471a-a3ee-db64c1ce597d" >
+    <img ![red_diver_aces] width="128" height="72" src="https://github.com/user-attachments/assets/2bb31550-935d-4f36-b9fd-0384bd41f009" >
+    <img ![red_diver_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/6c12be54-0008-4548-9009-a39eb4a4437b" >
+    <img ![blue_pool_aces] width="128" height="72" src="https://github.com/user-attachments/assets/5e6a81fb-2fdb-4178-b6d1-f046dfa05d96" >
+    <img ![blue_pool_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/7b1ae5e6-208f-4b76-827c-aab61b46356d" >    
 </p>
 
 Original files (encoded in "ACES2065-1") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
@@ -46,14 +46,14 @@ Original files (encoded in "ACES2065-1") are available [here](https://www.dropbo
 * "ACEScct" can be used for a matte-painting workflow in Photoshop
 * "ACEScct" can also be used for color timing and some log operations (such as sharpen)
 * Substance_painter roles were set following [this page](https://mrlixm.github.io/blog/substance-painter-color-management/)
-* No inverse of the View Transforms has been provided
 * One may easily add several colorspaces or displays for HDR output if needed (such as "p3_d65_pq")
 
 # Look Modification Transform
-* There is only one look in this config (called "Brejon") and it is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
+* The main look in this config is called "Brejon" and is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
 * Its purpose is to give a pleasing aspect by carefully rebalancing purity, brilliance and hue path bendings
 * The use of looks is highly recommended with ACES
 * The "Brejon" look has been added to the ACES Views by default to the config
+* The RGC is also available and has been added to the ACES Views
 
 # Other available Color Management Workflows
 | Name                                                                                             | Author               | Release date |              Observations                             |
