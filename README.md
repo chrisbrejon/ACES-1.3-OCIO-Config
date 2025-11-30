@@ -8,7 +8,7 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 Its main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
 
 # Image Examples
-Below are some examples of ACES 1.3 with the Reference Gamut Compression (RGC) and my "Brejon" LMT:
+Below are some examples of ACES 1.3 with the [Reference Gamut Compression (RGC)](https://docs.acescentral.com/rgc/overview/) and my "Brejon" LMT:
 <p>
     <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/b6c91eb0-6c65-4677-9ea0-15ad08f71bfc" >
     <img ![hue_sweep_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f20f466c-af63-4a27-a2ff-2692eaebee9d" >
