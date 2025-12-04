@@ -3,7 +3,7 @@ search_path: looks
 strictparsing: true
 luma: [0.2126, 0.7152, 0.0722]
 
-description: ACES v1.3 for OCIO v2.3
+description: ACES v1.3 for OCIO v2.1
 
 roles:
   aces_interchange: ACES2065-1
