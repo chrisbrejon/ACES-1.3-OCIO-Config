@@ -97,7 +97,7 @@ colorspaces:
   - !<ColorSpace>
     name: lin_p3d65
     family: SceneReferred
-    description: Convert ACES2065-1 to linear P3 primaries, D65 white point
+    description: Linear P3 primaries, D65 white point
     from_scene_reference: !<MatrixTransform> {matrix: [2.02490528596679, -0.689069761034766, -0.335835524932019, 0, -0.183597032256178, 1.28950620775902, -0.105909175502841, 0, 0.00905856112234766, -0.0592796840575522, 1.0502211229352, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace>
