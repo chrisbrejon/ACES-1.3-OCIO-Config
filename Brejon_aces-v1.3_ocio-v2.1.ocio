@@ -209,8 +209,12 @@ looks:
   - !<Look>
     name: BrejonA1
     description: A pleasing look for ACES 1.3   
-    process_space: tlog_egamut2
-    transform: !<FileTransform> {src: Brejon_A1_TLog_EGamut2_v005_65.cube, interpolation: tetrahedral}
+    process_space: ACES2065-1
+    transform: !<GroupTransform>
+      children:
+        - !<ColorSpaceTransform> {src: aces_interchange, dst: tlog_egamut2}
+        - !<FileTransform> {src: Brejon_A1_TLog_EGamut2_v005_65.cube, interpolation: tetrahedral}
+        - !<ColorSpaceTransform> {src: tlog_egamut2, dst: aces_interchange}        
 
   - !<Look>
     name: RGC
