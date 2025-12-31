@@ -8,7 +8,7 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 Its main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
 
 # Image Examples
-Below are some examples with native ACES 1.3, then my "Brejon" LMT and finally with the [Reference Gamut Compression (RGC)](https://docs.acescentral.com/rgc/overview/):
+Below are some examples with native ACES 1.3, then my "Brejon" LMT and finally with the [RGC](https://docs.acescentral.com/rgc/overview/):
 <p>
     <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/61023c30-f9de-43b7-8e1e-5279f8ecf4ac" >
     <img ![hue_sweep_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f20f466c-af63-4a27-a2ff-2692eaebee9d" >
@@ -19,6 +19,9 @@ Below are some examples with native ACES 1.3, then my "Brejon" LMT and finally w
     <img ![dragon_scene_aces] width="128" height="72" src="https://github.com/user-attachments/assets/cb16ab68-a6e8-438c-bb56-50350ac986fd" >
     <img ![dragon_scene_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f24253a2-6ba5-4ad0-9700-db7a36252a8c" >
     <img ![dragon_scene_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/f3fcfd04-1c7b-4a3b-8f1a-4f1434803265" >
+    <img ![blue_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/8ae56c9c-cd35-487e-bfb9-0f684ee3a145" >
+    <img ![blue_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/05207ef4-8913-471a-a3ee-db64c1ce597d" >
+    <img ![blue_concert_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/7c9523ff-59a6-42e6-9605-c6366348bcd9" >      
     <img ![blue_club_aces] width="128" height="72" src="https://github.com/user-attachments/assets/ef15e2eb-82d7-4df2-9247-323c5d7ff5c1" >
     <img ![blue_club_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/59117e5e-f137-42e0-b5fa-1630681986dc" >
     <img ![blue_club_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/f7ac69b3-7d5b-4b7d-8f0f-3baec1ed4867" >
@@ -36,10 +39,7 @@ Below are some examples with native ACES 1.3, then my "Brejon" LMT and finally w
     <img ![stageLights_balls_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/37d39316-4e43-4b1a-80d5-c0ac5dab74c8" >
     <img ![sunny_spheres_aces] width="128" height="72" src="https://github.com/user-attachments/assets/65cb8a5f-5fd7-42ce-a814-9288ab3e4238" >    
     <img ![sunny_spheres_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/fd6dfaf5-5b80-45b2-9cf9-656b3d0d1435" >
-    <img ![sunny_spheres_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/c4d3cfea-d8ba-4f84-94dd-fff24cb26e0b" >
-    <img ![blue_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/8ae56c9c-cd35-487e-bfb9-0f684ee3a145" >
-    <img ![blue_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/05207ef4-8913-471a-a3ee-db64c1ce597d" >
-    <img ![blue_concert_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/7c9523ff-59a6-42e6-9605-c6366348bcd9" >    
+    <img ![sunny_spheres_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/c4d3cfea-d8ba-4f84-94dd-fff24cb26e0b" >  
     <img ![red_diver_aces] width="128" height="72" src="https://github.com/user-attachments/assets/a407daf1-a2b9-4b28-99f9-16beb28cabaa" >
     <img ![red_diver_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/6c12be54-0008-4548-9009-a39eb4a4437b" >
     <img ![red_diver_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/2bb31550-935d-4f36-b9fd-0384bd41f009" >    
