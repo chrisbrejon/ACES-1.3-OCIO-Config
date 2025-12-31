@@ -8,32 +8,44 @@ Based on the [ACES 1.3 official OCIO Config](https://github.com/AcademySoftwareF
 Its main interest is the Look Modification Transform (LMT), which improves the visual artifacts present in ACES 1.3.
 
 # Image Examples
-Below are some examples of ACES 1.3 with the [Reference Gamut Compression (RGC)](https://docs.acescentral.com/rgc/overview/) and my "Brejon" LMT:
+Below are some examples with native ACES 1.3, then my "Brejon" LMT and finally with the [Reference Gamut Compression (RGC)](https://docs.acescentral.com/rgc/overview/):
 <p>
-    <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/b6c91eb0-6c65-4677-9ea0-15ad08f71bfc" >
+    <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/61023c30-f9de-43b7-8e1e-5279f8ecf4ac" >
     <img ![hue_sweep_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f20f466c-af63-4a27-a2ff-2692eaebee9d" >
-    <img ![light_sabers_aces] width="128" height="72" src="https://github.com/user-attachments/assets/4d53dc76-0737-4738-8a84-a7e3a0e0e7e7" >
+    <img ![hue_sweep_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/b6c91eb0-6c65-4677-9ea0-15ad08f71bfc" >
+    <img ![light_sabers_aces] width="128" height="72" src="https://github.com/user-attachments/assets/06f44366-7e64-45aa-9094-e5aa03067197" >    
     <img ![light_sabers_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/8b2ecda3-4206-47ab-ac5e-6d526f415ba7" >
-    <img ![dragon_scene_aces] width="128" height="72" src="https://github.com/user-attachments/assets/f3fcfd04-1c7b-4a3b-8f1a-4f1434803265" >
+    <img ![light_sabers_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/4d53dc76-0737-4738-8a84-a7e3a0e0e7e7" >
+    <img ![dragon_scene_aces] width="128" height="72" src="https://github.com/user-attachments/assets/cb16ab68-a6e8-438c-bb56-50350ac986fd" >
     <img ![dragon_scene_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f24253a2-6ba5-4ad0-9700-db7a36252a8c" >
-    <img ![blue_club_aces] width="128" height="72" src="https://github.com/user-attachments/assets/f7ac69b3-7d5b-4b7d-8f0f-3baec1ed4867" >
+    <img ![dragon_scene_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/f3fcfd04-1c7b-4a3b-8f1a-4f1434803265" >
+    <img ![blue_club_aces] width="128" height="72" src="https://github.com/user-attachments/assets/ef15e2eb-82d7-4df2-9247-323c5d7ff5c1" >
     <img ![blue_club_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/59117e5e-f137-42e0-b5fa-1630681986dc" >
-    <img ![red_xmas_aces] width="128" height="72" src="https://github.com/user-attachments/assets/407c14d3-99a8-416a-a649-9710185f9646" >
+    <img ![blue_club_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/f7ac69b3-7d5b-4b7d-8f0f-3baec1ed4867" >
+    <img ![red_xmas_aces] width="128" height="72" src="https://github.com/user-attachments/assets/b1d78c54-f7b8-4645-ab61-260d05a78c22" >    
     <img ![red_xmas_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5612e711-6457-4fa7-ab45-a05567215d0b" >
-    <img ![blue_bar_aces] width="128" height="72" src="https://github.com/user-attachments/assets/3b7910e6-1c0f-4770-bc7e-7a4727ce47fb" >
+    <img ![red_xmas_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/407c14d3-99a8-416a-a649-9710185f9646" >
+    <img ![blue_bar_aces] width="128" height="72" src="https://github.com/user-attachments/assets/48970cc7-a061-40d1-b27b-49a6fe719c49" >
     <img ![blue_bar_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/d3302cd2-562c-4c56-8278-d8bdff31a34f" >
-    <img ![louise_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/bb8ac557-80d5-430d-a204-0d7414ae80f0" >
+    <img ![blue_bar_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/3b7910e6-1c0f-4770-bc7e-7a4727ce47fb" >
+    <img ![louise_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/17bec684-fe00-4500-823d-90545449a98f" >    
     <img ![louise_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5ee6c506-c676-43d8-a0d8-36441d3ca0c5" >
-    <img ![stageLights_balls_aces] width="128" height="72" src="https://github.com/user-attachments/assets/37d39316-4e43-4b1a-80d5-c0ac5dab74c8" >
+    <img ![louise_concert_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/bb8ac557-80d5-430d-a204-0d7414ae80f0" >
+    <img ![stageLights_balls_aces] width="128" height="72" src="https://github.com/user-attachments/assets/c86d7fe3-9f34-4188-89e8-adb7b7e6c614" >    
     <img ![stageLights_balls_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/0d275440-0dbd-4f5c-a1a1-f450a52bf520" >
-    <img ![sunny_spheres_aces] width="128" height="72" src="https://github.com/user-attachments/assets/c4d3cfea-d8ba-4f84-94dd-fff24cb26e0b" >
+    <img ![stageLights_balls_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/37d39316-4e43-4b1a-80d5-c0ac5dab74c8" >
+    <img ![sunny_spheres_aces] width="128" height="72" src="https://github.com/user-attachments/assets/65cb8a5f-5fd7-42ce-a814-9288ab3e4238" >    
     <img ![sunny_spheres_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/fd6dfaf5-5b80-45b2-9cf9-656b3d0d1435" >
-    <img ![blue_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/7c9523ff-59a6-42e6-9605-c6366348bcd9" >
+    <img ![sunny_spheres_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/c4d3cfea-d8ba-4f84-94dd-fff24cb26e0b" >
+    <img ![blue_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/8ae56c9c-cd35-487e-bfb9-0f684ee3a145" >
     <img ![blue_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/05207ef4-8913-471a-a3ee-db64c1ce597d" >
-    <img ![red_diver_aces] width="128" height="72" src="https://github.com/user-attachments/assets/2bb31550-935d-4f36-b9fd-0384bd41f009" >
+    <img ![blue_concert_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/7c9523ff-59a6-42e6-9605-c6366348bcd9" >    
+    <img ![red_diver_aces] width="128" height="72" src="https://github.com/user-attachments/assets/a407daf1-a2b9-4b28-99f9-16beb28cabaa" >
     <img ![red_diver_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/6c12be54-0008-4548-9009-a39eb4a4437b" >
-    <img ![blue_pool_aces] width="128" height="72" src="https://github.com/user-attachments/assets/5e6a81fb-2fdb-4178-b6d1-f046dfa05d96" >
-    <img ![blue_pool_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/7b1ae5e6-208f-4b76-827c-aab61b46356d" >    
+    <img ![red_diver_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/2bb31550-935d-4f36-b9fd-0384bd41f009" >    
+    <img ![blue_pool_aces] width="128" height="72" src="https://github.com/user-attachments/assets/342782de-2baa-403b-b880-8cc09646fc55" >
+    <img ![blue_pool_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/7b1ae5e6-208f-4b76-827c-aab61b46356d" >
+    <img ![blue_pool_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/5e6a81fb-2fdb-4178-b6d1-f046dfa05d96" >    
 </p>
 
 Original files (encoded in "ACES2065-1") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
