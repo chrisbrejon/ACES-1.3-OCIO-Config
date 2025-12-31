@@ -13,7 +13,7 @@ roles:
   compositing_linear: ACEScg  
   compositing_log: ACEScct
   data: non-colour data
-  default: ACES2065-1  
+  default: ACES2065-1
   matte_paint: ACEScct
   rendering: ACEScg  
   scene_linear: ACEScg
@@ -41,28 +41,28 @@ roles:
   texture_int_paint: srgb_encoding
   texture_float_paint: ACEScg  
 
-file_rules:
-  - !<Rule> {name: Default, colorspace: ACES2065-1}
-
 displays:
   sRGB 100 nits office:
     - !<View> {name: ACES 1.3 Brejon, colorspace: ACES 1.3 - BT.709 - Gamma 2.2, looks: BrejonA1}  
     - !<View> {name: ACES 1.3 RGC, colorspace: ACES 1.3 - BT.709 - Gamma 2.2, looks: RGC}
+    - !<View> {name: ACES 1.3, colorspace: ACES 1.3 - BT.709 - Gamma 2.2}    
     - !<View> {name: Display Encoding, colorspace: srgb_display}
     - !<View> {name: None, colorspace: non-colour data}            
   Rec1886 100 nits video dim:
     - !<View> {name: ACES 1.3 Brejon, colorspace: ACES 1.3 - BT.709 - Gamma 2.4, looks: BrejonA1}  
     - !<View> {name: ACES 1.3 RGC, colorspace: ACES 1.3 - BT.709 - Gamma 2.4, looks: RGC}
+    - !<View> {name: ACES 1.3, colorspace: ACES 1.3 - BT.709 - Gamma 2.4}    
     - !<View> {name: Display Encoding, colorspace: rec709_display}
     - !<View> {name: None, colorspace: non-colour data}
   DisplayP3 100 nits video dim:
     - !<View> {name: ACES 1.3 Brejon, colorspace: ACES 1.3 - P3 - Gamma 2.2, looks: BrejonA1}  
     - !<View> {name: ACES 1.3 RGC, colorspace: ACES 1.3 - P3 - Gamma 2.2, looks: RGC}
+    - !<View> {name: ACES 1.3, colorspace: ACES 1.3 - P3 - Gamma 2.2}    
     - !<View> {name: Display Encoding, colorspace: p3_display}
     - !<View> {name: None, colorspace: non-colour data}               
 
 active_displays: [sRGB 100 nits office, Rec1886 100 nits video dim, DisplayP3 100 nits video dim]
-active_views: [ACES 1.3 Brejon, ACES 1.3 RGC, Display Encoding, None]
+active_views: [ACES 1.3 Brejon, ACES 1.3 RGC, ACES 1.3, Display Encoding, None]
 inactive_colorspaces: [CIE XYZ-D65 - Display-referred, CIE XYZ-D65 - Scene-referred]
 
 ##################################### SCENE-REFERRED ##############################################    
