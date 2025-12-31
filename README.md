@@ -9,7 +9,7 @@ Its main interest is the Look Modification Transform (LMT), which improves the v
 
 # Image Examples
 Below are some visual examples with:
-* First, nnative ACES 1.3
+* First, vanilla ACES 1.3
 * Then with my "Brejon" LMT
 * Finally with the [Reference Gamut Compression (RGC)](https://docs.acescentral.com/rgc/overview/):
 <p>
@@ -24,19 +24,19 @@ Below are some visual examples with:
     <img ![blue_concert_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/7c9523ff-59a6-42e6-9605-c6366348bcd9" >      
     <img ![blue_club_aces] width="128" height="72" src="https://github.com/user-attachments/assets/ef15e2eb-82d7-4df2-9247-323c5d7ff5c1" >
     <img ![blue_club_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/59117e5e-f137-42e0-b5fa-1630681986dc" >
-    <img ![blue_club_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/f7ac69b3-7d5b-4b7d-8f0f-3baec1ed4867" >
+    <img ![blue_club_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/f7ac69b3-7d5b-4b7d-8f0f-3baec1ed4867" >    
+    <img ![louise_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/17bec684-fe00-4500-823d-90545449a98f" >    
+    <img ![louise_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5ee6c506-c676-43d8-a0d8-36441d3ca0c5" >
+    <img ![louise_concert_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/bb8ac557-80d5-430d-a204-0d7414ae80f0" >
+    <img ![dragon_scene_aces] width="128" height="72" src="https://github.com/user-attachments/assets/cb16ab68-a6e8-438c-bb56-50350ac986fd" >
+    <img ![dragon_scene_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f24253a2-6ba5-4ad0-9700-db7a36252a8c" >
+    <img ![dragon_scene_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/f3fcfd04-1c7b-4a3b-8f1a-4f1434803265" >
     <img ![red_xmas_aces] width="128" height="72" src="https://github.com/user-attachments/assets/b1d78c54-f7b8-4645-ab61-260d05a78c22" >    
     <img ![red_xmas_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5612e711-6457-4fa7-ab45-a05567215d0b" >
     <img ![red_xmas_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/407c14d3-99a8-416a-a649-9710185f9646" >
     <img ![red_diver_aces] width="128" height="72" src="https://github.com/user-attachments/assets/a407daf1-a2b9-4b28-99f9-16beb28cabaa" >
     <img ![red_diver_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/6c12be54-0008-4548-9009-a39eb4a4437b" >
     <img ![red_diver_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/2bb31550-935d-4f36-b9fd-0384bd41f009" >      
-    <img ![louise_concert_aces] width="128" height="72" src="https://github.com/user-attachments/assets/17bec684-fe00-4500-823d-90545449a98f" >    
-    <img ![louise_concert_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/5ee6c506-c676-43d8-a0d8-36441d3ca0c5" >
-    <img ![louise_concert_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/bb8ac557-80d5-430d-a204-0d7414ae80f0" >
-    <img ![dragon_scene_aces] width="128" height="72" src="https://github.com/user-attachments/assets/cb16ab68-a6e8-438c-bb56-50350ac986fd" >
-    <img ![dragon_scene_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f24253a2-6ba5-4ad0-9700-db7a36252a8c" >
-    <img ![dragon_scene_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/f3fcfd04-1c7b-4a3b-8f1a-4f1434803265" >    
     <img ![stageLights_balls_aces] width="128" height="72" src="https://github.com/user-attachments/assets/c86d7fe3-9f34-4188-89e8-adb7b7e6c614" >    
     <img ![stageLights_balls_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/0d275440-0dbd-4f5c-a1a1-f450a52bf520" >
     <img ![stageLights_balls_rgc] width="128" height="72" src="https://github.com/user-attachments/assets/37d39316-4e43-4b1a-80d5-c0ac5dab74c8" >
