@@ -9,9 +9,9 @@ Its main interest is the Look Modification Transform (LMT), which improves the v
 
 # Image Examples
 Below are some visual examples with:
-* First, vanilla ACES 1.3
-* Then with my "Brejon" LMT
-* Finally with the [Reference Gamut Compression (RGC)](https://docs.acescentral.com/rgc/overview/):
+* First, vanilla ACES 1.3 (left screenshot)
+* Then with my "Brejon" LMT (middle screenshot)
+* Finally with the [Reference Gamut Compression "RGC"](https://docs.acescentral.com/rgc/overview/) (right screenshot)
 <p>
     <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/61023c30-f9de-43b7-8e1e-5279f8ecf4ac" >
     <img ![hue_sweep_brejon] width="128" height="72" src="https://github.com/user-attachments/assets/f20f466c-af63-4a27-a2ff-2692eaebee9d" >
