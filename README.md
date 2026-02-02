@@ -71,10 +71,10 @@ Original files (encoded in "ACES2065-1") are available [here](https://www.dropbo
 
 # A plea for an ACES 1.3 LMT
 * LMTs are not an anomaly. They are a necessary step of the pipeline, as [designed by The Academy](https://docs.acescentral.com/system-components/look-transforms/)
-* LMTs are a way to make your projects look truly unique. With the right tools, you may craft your visual identity
-* My LMT compensates for the lack of "purity attenuation" from the Output Transforms (released in 2014)
-* My LMT gives a better starting point to the artists by providing a better depiction of energy in our images
-* My LMT is non-destructive since it is applied on-the-fy as part of the "View". It can be modified if needed
+* LMTs are a way to make your projects look truly unique. With the right tools, you may craft your **visual identity**
+* My LMT compensates for the lack of **"purity attenuation"** from the Output Transforms (released in 2014)
+* My LMT gives a better starting point to the artists by providing **a better depiction of energy** in our images
+* My LMT is **non-destructive** since it is applied on-the-fy as part of the "View". It can be modified if needed
 * LMTs are easy to add to OCIO configs. Its implementattion lies in a few lines of code and an external LUT file
 
 # Other available Color Management Workflows
