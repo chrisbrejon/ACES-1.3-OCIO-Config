@@ -64,8 +64,9 @@ Original files (encoded in "ACES2065-1") are available [here](https://www.dropbo
 * One may easily add several colorspaces or displays for HDR output if needed (such as "p3_d65_pq")
 
 # Look Modification Transform
+* LMTs provide **creative flexibility** to picture depiction (one look might be suitable for one show but not for another)
 * The main look in this config is called "Brejon" and is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
-* Its purpose is to give a pleasing aspect by carefully rebalancing purity, brilliance and hue path bendings
+* Its purpose is to give **a pleasing aspect** by carefully rebalancing purity, brilliance and hue path bendings
 * The use of looks is highly recommended with ACES and my LMT was added to the ACES Views by default
 * I also added it the RGC for comparison
 
