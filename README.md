@@ -10,7 +10,7 @@ Its main interest is the Look Modification Transform (LMT), which improves the v
 # Image Examples
 Below are some visual examples with:
 * First, vanilla ACES 1.3 (left screenshot)
-* Then with my "Brejon" LMT (middle screenshot)
+* Then with my "Brejon v005" LMT (middle screenshot)
 * Finally with the [Reference Gamut Compression "RGC"](https://docs.acescentral.com/rgc/overview/) (right screenshot)
 <p>
     <img ![hue_sweep_aces] width="128" height="72" src="https://github.com/user-attachments/assets/61023c30-f9de-43b7-8e1e-5279f8ecf4ac" >
@@ -66,9 +66,15 @@ Original files (encoded in "ACES2065-1") are available [here](https://www.dropbo
 # Look Modification Transform
 * The main look in this config is called "Brejon" and is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
 * Its purpose is to give a pleasing aspect by carefully rebalancing purity, brilliance and hue path bendings
-* The use of looks is highly recommended with ACES
-* The "Brejon" look has been added to the ACES Views by default to the config
-* The RGC is also available and has been added to the ACES Views
+* The use of looks is highly recommended with ACES and the "Brejon" look has been added to the ACES Views by default to the config (just like the RGC)
+
+# A plea for an ACES 1.3 LMT
+* LMTs are not an anomaly. They are a necessary step of the pipeline, as [designed by The Academy](https://docs.acescentral.com/system-components/look-transforms/)
+* LMTs are a way to make your projects look truly unique. With the right tools, you may craft your visual identity (picture formations should not be standardized)
+* ACES 1.X got released in December 2014 and the Output Transforms are a bit crude and simplistic. My LMT compensates for the lack of "purity attenuation"
+* My LMT is meant to give a better starting point to the artists by providing a better depiction of energy in our images. Something we **CANNOT** compensate for later
+* My LMT is non-destructive since it is applied on-the-fy as part of the "View". It can be modified or even removed if needed.
+* LMTs are easy to add to OCIO configs. Its implementattion lies in a few lines of code and an external LUT file.
 
 # Other available Color Management Workflows
 | Name                                                                                             | Author               | Release date |              Observations                             |
