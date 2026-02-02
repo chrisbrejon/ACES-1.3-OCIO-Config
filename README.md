@@ -74,7 +74,7 @@ Original files (encoded in "ACES2065-1") are available [here](https://www.dropbo
 * ACES shows with LMT are very common (mostly on high budget projects from ILM, Disney, Netflix, Marvel...)
 * LMTs are a way to make your projects look truly unique. With the right tools, you may craft your **visual identity**
 * My LMT compensates for the lack of **"purity attenuation"** from the Output Transforms (released in 2014)
-* My LMT gives a better starting point to the artists by providing **a better depiction of energy** in our images
+* My LMT gives a better starting point to the artists by providing **a more accurate depiction of energy**
 * My LMT is **non-destructive** since it is applied on-the-fly as part of the "View". It can be modified if needed
 * LMTs are easy to add to OCIO configs. Its implementattion lies in a few lines of code and an external LUT file
 
