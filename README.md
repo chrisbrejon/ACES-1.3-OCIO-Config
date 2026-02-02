@@ -67,14 +67,14 @@ Original files (encoded in "ACES2065-1") are available [here](https://www.dropbo
 * The main look in this config is called "Brejon" and is based on [my article about **picture formations**](https://chrisbrejon.com/articles/what-makes-a-good-picture-formation/)
 * Its purpose is to give a pleasing aspect by carefully rebalancing purity, brilliance and hue path bendings
 * The use of looks is highly recommended with ACES and my LMT was added to the ACES Views by default
-* I also added it the RGC or comparison
+* I also added it the RGC for comparison
 
 # A plea for an ACES 1.3 LMT
 * LMTs are not an anomaly. They are a necessary step of the pipeline, as [designed by The Academy](https://docs.acescentral.com/system-components/look-transforms/)
 * LMTs are a way to make your projects look truly unique. With the right tools, you may craft your **visual identity**
 * My LMT compensates for the lack of **"purity attenuation"** from the Output Transforms (released in 2014)
 * My LMT gives a better starting point to the artists by providing **a better depiction of energy** in our images
-* My LMT is **non-destructive** since it is applied on-the-fy as part of the "View". It can be modified if needed
+* My LMT is **non-destructive** since it is applied on-the-fly as part of the "View". It can be modified if needed
 * LMTs are easy to add to OCIO configs. Its implementattion lies in a few lines of code and an external LUT file
 
 # Other available Color Management Workflows
