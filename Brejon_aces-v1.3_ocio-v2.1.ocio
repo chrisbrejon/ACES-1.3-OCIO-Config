@@ -213,7 +213,7 @@ looks:
     transform: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: aces_interchange, dst: tlog_egamut2}
-        - !<FileTransform> {src: Brejon_A1_TLog_EGamut2_v007_65.cube, interpolation: tetrahedral}
+        - !<FileTransform> {src: Brejon_A1_TLog_EGamut2_v011_65.cube, interpolation: tetrahedral}
         - !<ColorSpaceTransform> {src: tlog_egamut2, dst: aces_interchange}        
 
   - !<Look>
