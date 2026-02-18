@@ -86,25 +86,25 @@ colorspaces:
     name: ACEScg
     family: SceneReferred
     description: A Working Space for CGI Render and Compositing | http://j.mp/S-2014-004
-    to_reference: !<MatrixTransform> {matrix: [0.695452241357452, 0.140678696470294, 0.163869062172254, 0, 0.0447945633720377, 0.859671118456422, 0.0955343181715404, 0, -0.00552588255811354, 0.00402521030597866, 1.00150067225213, 0, 0, 0, 0, 1]}
+    to_reference: !<MatrixTransform> {name: AP1 to AP0 (Bradford), matrix: [0.695452241357452, 0.140678696470294, 0.163869062172254, 0, 0.0447945633720377, 0.859671118456422, 0.0955343181715404, 0, -0.00552588255811354, 0.00402521030597866, 1.00150067225213, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace>
     name: lin_rec709
     family: SceneReferred
     description: Linear Rec.709 primaries, D65 white point | https://www.itu.int/rec/R-REC-BT.709/en
-    from_scene_reference: !<MatrixTransform> {matrix: [2.52168618674388, -1.13413098823972, -0.387555198504164, 0, -0.276479914229922, 1.37271908766826, -0.096239173438334, 0, -0.0153780649660342, -0.152975335867399, 1.16835340083343, 0, 0, 0, 0, 1]}
+    from_scene_reference: !<MatrixTransform> {name: AP0 to Linear Rec.709 (Bradford), matrix: [2.52168618674388, -1.13413098823972, -0.387555198504164, 0, -0.276479914229922, 1.37271908766826, -0.096239173438334, 0, -0.0153780649660342, -0.152975335867399, 1.16835340083343, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace>
     name: lin_p3d65
     family: SceneReferred
     description: Linear P3 primaries, D65 white point
-    from_scene_reference: !<MatrixTransform> {matrix: [2.02490528596679, -0.689069761034766, -0.335835524932019, 0, -0.183597032256178, 1.28950620775902, -0.105909175502841, 0, 0.00905856112234766, -0.0592796840575522, 1.0502211229352, 0, 0, 0, 0, 1]}
+    from_scene_reference: !<MatrixTransform> {name: AP0 to Linear P3-D65 (Bradford), matrix: [2.02490528596679, -0.689069761034766, -0.335835524932019, 0, -0.183597032256178, 1.28950620775902, -0.105909175502841, 0, 0.00905856112234766, -0.0592796840575522, 1.0502211229352, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace>
     name: lin_rec2020
     family: SceneReferred
     description: Linear Rec.2020 primaries, D65 white point | https://www.itu.int/rec/R-REC-BT.2020/en
-    from_scene_reference: !<MatrixTransform> {matrix: [1.49040952054172, -0.26617091926613, -0.224238601275593, 0, -0.0801674998722558, 1.18216712109757, -0.10199962122531, 0, 0.00322763119162216, -0.0347764757450576, 1.03154884455344, 0, 0, 0, 0, 1]}
+    from_scene_reference: !<MatrixTransform> {name: AP0 to Linear Rec.2020 (Bradford), matrix: [1.49040952054172, -0.26617091926613, -0.224238601275593, 0, -0.0801674998722558, 1.18216712109757, -0.10199962122531, 0, 0.00322763119162216, -0.0347764757450576, 1.03154884455344, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace>
     name: tlog_egamut2
@@ -145,8 +145,21 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<BuiltinTransform> {style: ACES-OUTPUT - ACES2065-1_to_CIE-XYZ-D65 - SDR-VIDEO_1.0}
-        - !<MatrixTransform> {matrix: [2.4934969119, -0.9313836179, -0.4027107845, 0.0000000000, -0.8294889696, 1.7626640603, 0.0236246858, 0.0000000000, 0.0358458302, -0.0761723893, 0.9568845240, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
-        - !<ExponentTransform> {value: 2.2, style: pass_thru, direction: inverse}           
+        - !<MatrixTransform> {name: DCDM XYZ to Display P3 (None), matrix: [2.4934969119, -0.9313836179, -0.4027107845, 0.0000000000, -0.8294889696, 1.7626640603, 0.0236246858, 0.0000000000, 0.0358458302, -0.0761723893, 0.9568845240, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<ExponentTransform> {value: 2.2, style: pass_thru, direction: inverse}
+
+  - !<ColorSpace>
+    name: ACES 1.3 Brejon - BT.709 - Gamma 2.4
+    family: DisplayReferred
+    bitdepth: 32f
+    description: ACES 1.3 Rec.709 Output Transform with the BrejonA1 look
+    from_scene_reference: !<GroupTransform>
+      children:
+        - !<ColorSpaceTransform> {src: aces_interchange, dst: tlog_egamut2}
+        - !<FileTransform> {src: Brejon_A1_TLog_EGamut2_v011_65.cube, interpolation: tetrahedral}
+        - !<ColorSpaceTransform> {src: tlog_egamut2, dst: aces_interchange}  
+        - !<BuiltinTransform> {style: ACES-OUTPUT - ACES2065-1_to_CIE-XYZ-D65 - SDR-VIDEO_1.0}
+        - !<BuiltinTransform> {style: DISPLAY - CIE-XYZ-D65_to_REC.1886-REC.709}
 
 ############################################## UTILITY ##############################################    
   - !<ColorSpace>
